@@ -22,7 +22,7 @@ class ChartOptions {
   ///     a limited number of Y labels from data, so that Y labels do not
   ///     crowd, and little Y space is wasted on top.
 
-  final bool useUserProvidedYLabels = false;
+  bool useUserProvidedYLabels = false;
 
   /// Shows largest value on very top of the chart grid, to save space.
   final bool largestValuePointOnVeryTop = true; // false not supported yet
@@ -32,7 +32,7 @@ class ChartOptions {
 
   /// Color defaults
   final ui.Color gridLinesColor = material.Colors.grey;
-  final ui.Color xLabelsColor =
+  ui.Color xLabelsColor =
       material.Colors.grey; // const ui.Color(0xFFEEEEEE)
 
   /// Length of the ticks around the grid rectangle.
@@ -64,11 +64,11 @@ class ChartOptions {
   // together with data series name (legend name).
 
   /// Margin on the left/right of the LegendContainer
-  final double legendContainerMarginLR =
+  double legendContainerMarginLR =
       8.0; // keep 12.0, looks better unaligned
 
   /// Margin on the top/bottom of the LegendContainer
-  final double legendContainerMarginTB = 4.0;
+  double legendContainerMarginTB = 4.0;
 
   /// Between each legend item pairs (indicator + label)
   final double betweenLegendItemsPadding = 4.0;
@@ -139,7 +139,7 @@ class ChartOptions {
   final double labelTextScaleFactor = 1.0;
 
   /// todo-2 remove, replace with formatter outright
-  final String yLabelUnits = "";
+  String yLabelUnits = "";
 
   String toLabel(String label) => label + yLabelUnits;
 
