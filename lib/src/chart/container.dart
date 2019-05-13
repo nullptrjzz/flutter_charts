@@ -1357,7 +1357,7 @@ class LegendContainer extends ChartAreaContainer {
 
   void paint(ui.Canvas canvas) {
     for (var legendItemContainer in _legendItemContainers) {
-      legendItemContainer.paint(canvas);
+      // legendItemContainer.paint(canvas);
     }
   }
 }
